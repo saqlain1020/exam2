@@ -2,6 +2,7 @@
 <div class="page">
     <form class="form" [formGroup]="myGroup" >
       <h2>Order Form</h2>
+      <input type="text" placeholder="Order ID" class="input" formControlName="OrderID"/>
       <input type="text" placeholder="Enter Name" class="input" formControlName="Name"/>
       <input type="text" placeholder="Enter Address" class="input" formControlName="Address"/>
       <input type="text" placeholder="Image Url" class="input" formControlName="Image"/>
@@ -9,8 +10,8 @@
       <input type="text" placeholder="Item name" class="input" formControlName="Item"/>
       <input type="number" placeholder="Qty" class="input" formControlName="Qty" />
 
-      <a (click)='onSubmit()' class="btn">Add more rows</a>
+      <a (click)='onSubmit()' class="btn">Add Order</a>
 
-      <a  routerLink="/orders-details" class="btn">Add/Edit Order</a>
+      <a  routerLink="/orders-details" class="btn">View Orders</a>
     </form>
   </div>
