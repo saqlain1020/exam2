@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {AppService} from '../../app.service';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-orders',
@@ -22,7 +23,7 @@ export class OrdersComponent implements OnInit {
       }
     );
 
-  constructor(private appService: AppService,private formBuilder: FormBuilder,) { }
+  constructor(private appService: AppService,private formBuilder: FormBuilder,private db: AngularFirestore) { }
 
   ngOnInit(): void {
 
@@ -31,6 +32,7 @@ export class OrdersComponent implements OnInit {
   onSubmit(){
     this.appService.orders.push(this.myGroup.value)
     console.log(this.appService.orders)
+    this.db.collection("orders").add(this.myGroup.value);
   }
 
 }
