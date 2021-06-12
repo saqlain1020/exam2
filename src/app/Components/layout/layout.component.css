@@ -1,0 +1,28 @@
+.btn{
+    background: cadetblue;
+    color:white;
+    padding: 25px 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.page{
+    height:100vh;
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+h1{
+    font-size: 50px;
+}
+.main-heading{
+    padding-bottom: 50px;
+}
+.form{
+    display: flex;
+    flex-flow: column;
+}
