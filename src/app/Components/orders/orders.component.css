@@ -1,0 +1,77 @@
+.btn {
+    background: cadetblue;
+    color: white;
+    padding: 25px 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .btn2 {
+    background: cadetblue;
+    color: white;
+    padding: 25px 40px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .page {
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .main-heading {
+    padding-bottom: 50px;
+  }
+  .form {
+    display: flex;
+    flex-flow: column;
+  }
+  .input {
+    height: 40px;
+    outline: none;
+    border: none;
+    margin-bottom: 8px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  .line{
+      width:200;
+      height: 2px;
+      background-color: wheat;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  .table{
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 10px;
+      box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+      padding:10px;
+  
+  }
+  .table th{
+      min-width:100px;
+      height: 40px;
+  }
+  .table td{
+      text-align:center;
+      height: 40px;
+      
+  }
+  .table tr:hover{
+      background-color: rgba(0,0,0,0.03);
+  }
