@@ -12,6 +12,7 @@ export class OrdersComponent implements OnInit {
   myGroup: FormGroup =
      this.formBuilder.group(
       {
+        OrderID : new FormControl(''),
         Name : new FormControl(''),
         Address : new FormControl(''),
         Image : new FormControl(''),
