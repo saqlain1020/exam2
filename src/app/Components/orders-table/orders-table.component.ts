@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from './../../app.service';
 
 @Component({
   selector: 'app-orders-table',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdersTableComponent implements OnInit {
 
-  constructor() { }
+  orders = this.appService.orders;
+  constructor(private appService:AppService) { }
 
   ngOnInit(): void {
+    console.log(this.appService.orders)
   }
 
 }
