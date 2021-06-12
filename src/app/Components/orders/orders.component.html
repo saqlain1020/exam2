@@ -1,16 +1,16 @@
 <!-- Add order page -->
 <div class="page">
-    <form class="form">
+    <form class="form" [formGroup]="myGroup" >
       <h2>Order Form</h2>
-      <input type="text" placeholder="Enter Name" class="input" />
-      <input type="text" placeholder="Enter Address" class="input" />
-      <input type="text" placeholder="Image Url" class="input" />
-      <div class="line"></div>
-      <input type="text" placeholder="Item name" class="input" />
-      <input type="number" placeholder="Qty" class="input" />
-  
-      <button class="btn2">Add more rows</button>
-  
-      <button type="submit" class="btn">Add/Edit Order</button>
+      <input type="text" placeholder="Enter Name" class="input" formControlName="Name"/>
+      <input type="text" placeholder="Enter Address" class="input" formControlName="Address"/>
+      <input type="text" placeholder="Image Url" class="input" formControlName="Image"/>
+      <div class="line" ></div>
+      <input type="text" placeholder="Item name" class="input" formControlName="Item"/>
+      <input type="number" placeholder="Qty" class="input" formControlName="Qty" />
+
+      <a (click)='onSubmit()' class="btn2">Add more rows</a>
+
+      <button  class="btn">Add/Edit Order</button>
     </form>
   </div>

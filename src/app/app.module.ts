@@ -8,17 +8,21 @@ import { LayoutComponent } from './Components/layout/layout.component';
 import { OrdersComponent } from './Components/orders/orders.component';
 import { OrdersTableComponent } from './Components/orders-table/orders-table.component';
 import { RouterModule, Routes } from '@angular/router';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    OrdersComponent,
+    OrdersTableComponent
   ],
   imports: [
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
