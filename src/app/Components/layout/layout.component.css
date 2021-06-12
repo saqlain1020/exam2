@@ -1,22 +1,19 @@
 .btn {
-  background: cadetblue;
-  color: white;
+  background: transparent;
+  color: #00acc1;
+  border: 1px solid #00acc1;
+  border-radius: 5px;
   padding: 25px 40px;
   font-size: 20px;
   outline: none;
-  border: none;
   margin: 10px;
   cursor: pointer;
+  transition-duration: 0.4s;
 }
-.btn2 {
-  background: cadetblue;
+
+.btn:hover {
+  background-color: #00acc1; /* Green */
   color: white;
-  padding: 25px 40px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
 }
 .page {
   height: 100vh;
@@ -25,9 +22,14 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  box-sizing: border-box;
+  border: 2vw solid goldenrod;
 }
 h1 {
   font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: #222;
 }
 h2 {
   font-size: 40px;
@@ -47,31 +49,32 @@ h2 {
   padding: 5px;
   font-size: 18px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.line{
-    width:200;
-    height: 2px;
-    background-color: wheat;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.line {
+  width: 200;
+  height: 2px;
+  background-color: wheat;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.table{
-    border: 1px solid rgba(0,0,0,0.2);
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
-    padding:10px;
-
+.table {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
-.table th{
-    min-width:100px;
-    height: 40px;
+.table th {
+  min-width: 100px;
+  height: 40px;
 }
-.table td{
-    text-align:center;
-    height: 40px;
-    
+.table td {
+  text-align: center;
+  height: 40px;
 }
-.table tr:hover{
-    background-color: rgba(0,0,0,0.03);
+.table tr:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.btnContainer {
+  display: flex;
 }
