@@ -1,0 +1,68 @@
+<!-- header -->
+<nav class="navbar">
+  <!-- logo -->
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="https://bulma.io/images/bulma-logo.png" />
+    </a>
+  </div>
+</nav>
+
+<!-- routes will be rendered here -->
+<router-outlet></router-outlet>
+
+<!-- Landing Page -->
+<h1>Order Management System</h1>
+<button>View All orders</button>
+<button>Add Order</button>
+
+
+<!-- Order Details page -->
+<table>
+  <thead>
+    <tr>
+      <th>Contact Name</th>
+      <th>Address</th>
+      <th>Image Path</th>
+      <th>View More</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Contact name 1</td>
+      <td>Address 1</td>
+      <td>Image path 1</td>
+      <td>View More</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- Add order page -->
+<form>
+  <h2>Order Form</h2>
+  <input type="text" placeholder="Enter Name" />
+  <input type="text" placeholder="Enter Address" />
+  <input type="text" placeholder="Image Url" />
+
+  <input type="text" placeholder="Item name" />
+  <input type="number" placeholder="Qty" />
+
+  <button>Add more rows</button>
+
+  <button type="submit">Add/Edit Order</button>
+</form>
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Made with <3 by
+        <a href="https://twitter.com/chrisoncode">Chris from Scotch</a>
+      </p>
+    </div>
+  </div>
+</footer>
