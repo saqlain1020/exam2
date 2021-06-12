@@ -1,23 +1,20 @@
 .btn {
-  background: cadetblue;
-  color: white;
-  padding: 25px 40px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-}
-.btn2 {
-  background: cadetblue;
-  color: white;
-  padding: 25px 40px;
-  font-size: 20px;
-  outline: none;
-  border: none;
-  margin: 10px;
-  cursor: pointer;
-}
+    background: transparent;
+    color: #00acc1;
+    border: 1px solid #00acc1;
+    border-radius: 5px;
+    padding: 25px 40px;
+    font-size: 20px;
+    outline: none;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .btn:hover {
+    background-color: #00acc1; /* Green */
+    color: white;
+  }
 .page {
   height: 100vh;
   background-color: whitesmoke;
