@@ -4,19 +4,24 @@
     <table class="table">
       <thead>
         <tr>
+          <th>ID</th>
           <th>Contact Name</th>
           <th>Address</th>
           <th>Image Path</th>
-          <th>View More</th>
+          <th>Item</th>
+          <th>Qty</th>
         </tr>
       </thead>
 
       <tbody *ngFor="let order of orders" >
         <tr >
+          <td>{{order.OrderID}}</td>
           <td>{{order.Name}}</td>
           <td>{{order.Address}}</td>
           <td>{{order.Image}}</td>
-          <td></td>
+          <td>{{order.Item}}</td>
+          <td>{{order.Qty}}</td>
+          
       </tbody>
     </table>
   </div>

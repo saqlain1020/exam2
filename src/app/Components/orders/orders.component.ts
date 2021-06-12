@@ -22,9 +22,6 @@ export class OrdersComponent implements OnInit {
       }
     );
 
-
-
-
   constructor(private appService: AppService,private formBuilder: FormBuilder,) { }
 
   ngOnInit(): void {
