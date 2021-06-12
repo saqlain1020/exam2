@@ -10,12 +10,12 @@
           <th>View More</th>
         </tr>
       </thead>
-  
-      <tbody *ngFor="order of orders">
-        <tr>
-          <td>element.Name</td>
-          <td>element.Address</td>
-          <td>element.Image</td>
+
+      <tbody *ngFor="let order of orders" >
+        <tr >
+          <td>{{order.Name}}</td>
+          <td>{{order.Address}}</td>
+          <td>{{order.Image}}</td>
           <td></td>
       </tbody>
     </table>
